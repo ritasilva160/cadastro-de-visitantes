@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Visitantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Cadastro de Visitantes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Preencha o formulário abaixo:</h2>
+        <form action="processa.php" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+            <label for="genero">Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="Feminino" required>
+            <label for="feminino">Feminino</label><br><br>
+
+            <label for="cor_favorita">Cor favorita:</label>
+            <input type="color" id="cor_favorita" name="cor_favorita"><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"><br><br>
+
+            <label for="arquivo">Carregue um arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo"><br><br>
+
+            <label for="url">Site pessoal:</label>
+            <input type="url" id="url" name="url" placeholder="https://meusite.com"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="hora_visita">Hora de visita:</label>
+            <input type="time" id="hora_visita" name="hora_visita"><br><br>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>IFRN Campus Santa Cruz - Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Grupo: [Nomes dos integrantes]</p>
+    </footer>
+</body>
+</html>
